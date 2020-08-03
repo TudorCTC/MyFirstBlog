@@ -8,14 +8,12 @@
             <h2>Hello there, internet traveller! Have a look. :)</h2>
         </div>
 
-        <div>
-            <h3><a href="">My first post!</a></h3>
-            <p>It is empty!</p>
-        </div>
-
-        <div>
-            <h3><a href="">My second post! Terrific!</a></h3>
-            <p>Another empty one! How exciting!</p>
-        </div>
+        {% for post in posts %}
+            <div>
+                <p>Published: {{ post.publishedDate }}</p>
+                <h3><a href = "">{{ post.title }}</a></h3>
+                <p>{{  post.text|linebreaksbr }}</p>
+            </div>
+        {% endfor %}
     </body>
 </html>

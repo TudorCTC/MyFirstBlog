@@ -16,6 +16,9 @@
     text-decoration: none;
 }
 
+body {
+    background-color: #8fbca3;
+}
 .content {
     margin-left: 40px;
 }

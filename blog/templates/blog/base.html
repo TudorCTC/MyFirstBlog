@@ -9,6 +9,9 @@
     </head>
     <body>
         <div class = "pageHeader">
+            {% if user.is_authenticated %}
+                <a href="{% url 'post_new' %}" class="top-menu"><span class="glyphicon glyphicon-plus"></span></a>
+            {% endif %}
             <h1><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Takyon Reviews!</a></h1>
         </div>
 

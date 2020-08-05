@@ -1,13 +1,13 @@
 .pageHeader {
     background-color: #1de777;
     margin-top: 0;
-    padding: 20px 20px 20px 40px;
+    padding: 1px 20px 1px 40px;
 }
 
-.subheader {
+.menu {
     background-color: #26b370;
     margin-top: 0;
-    padding: 5px 20px 5px 40px;
+    padding: 1px 20px 1px 40px;
 }
 
 .pageHeader h1, .pageHeader h1 a, .pageHeader h1 a:visited, .pageHeader h1 a:active {

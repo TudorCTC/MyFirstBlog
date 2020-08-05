@@ -7,16 +7,18 @@
         <link href="//fonts.googleapis.com/css?family=Lobster&subset=latin,latin-ext" rel="stylesheet" type="text/css">
         <link rel="stylesheet" href="{% static 'css/blog.css' %}">
     </head>
+    
     <body>
         <div class = "pageHeader">
             {% if user.is_authenticated %}
                 <a href="{% url 'post_new' %}" class="top-menu"><span class="glyphicon glyphicon-plus"></span></a>
+                <a href = "{% url 'post_draft_list' %}" class = "top-menu"><span class = "glyphicon glyphicon-edit"></span></a>
             {% endif %}
             <h1><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Takyon Reviews!</a></h1>
         </div>
 
-        <div class = "subheader">
-            <h2>Hello there, internet traveller! Have a look. :)</h2>
+        <div class = "menu">
+            <h2>I feel like here there should be a menu. Home, CS, Books, Games, About.</h2>
         </div>
 
         <div class="content container">

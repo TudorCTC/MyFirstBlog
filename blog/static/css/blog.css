@@ -1,14 +1,26 @@
+/*This is the header shared between all of the urls.*/
 .pageHeader {
     background-color: #1de777;
     margin-top: 0;
     padding: 1px 20px 1px 40px;
+    height: 9vh;
 }
 
+.pageHeader h1, .pageHeader h1 a, .pageHeader h1 a:visited, .pageHeader h1 a:active {
+    color: #ffffff;
+    font-size: 36pt;
+    text-decoration: none;
+}
+
+/*Settings for the navigation bar.*/
 .menu {
     background-color: #26b370;
+    height: 5vh;
 }
 
 nav {
+    font-family: "Roboto";
+    font-weight: 500;
     display: flex;
     justify-content: center;
 }
@@ -56,22 +68,22 @@ nav a:hover::before {
     width: 100%;
 }
 
-.pageHeader h1, .pageHeader h1 a, .pageHeader h1 a:visited, .pageHeader h1 a:active {
-    color: #ffffff;
-    font-size: 36pt;
-    text-decoration: none;
-}
-
+/*Settings for the shared body of the pages.*/
 body {
-    background-color: #8fbca3;
+    background-image: url("../greenWallpaper5.jpg");
 }
 
 .content {
-    margin-left: 40px;
+    min-height: 86vh;
+    margin: 0 auto;
+    background-color: #ffffff;
+    position: relative;
+    display: block;
+    overflow: auto;
 }
 
 h1, h2, h3, h4 {
-    font-family: "Lobster", cursive;
+    font-family: "Righteous", cursive;
 }
 
 .date {
@@ -104,4 +116,32 @@ h1, h2, h3, h4 {
 
 .comment {
     margin: 20px 0px 20px 20px;
+}
+
+/*Settings for the "About" page.*/
+.about {
+    padding: 50px 40px 50px 40px;
+
+    /*position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);*/
+}
+
+.about h1{
+    font-family: "Roboto";
+    font-weight: bold;
+    text-align: center;
+}
+
+.about p{
+    text-indent: 50px;
+    text-align: justify;
+
+    line-height: 1.6;
+
+    font-family: "Roboto";
+    font-weight: 400;
+    font-size: large;
+
+    padding-top: 20px;
 }

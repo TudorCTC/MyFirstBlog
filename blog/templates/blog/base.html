@@ -4,7 +4,7 @@
         <title>Takyon Reviews!</title>
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
-        <link href="//fonts.googleapis.com/css?family=Lobster&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Righteous|Roboto:bold,400,500,900" rel="stylesheet" type="text/css">
         <link rel="stylesheet" href="{% static 'css/blog.css' %}">
     </head>
     
@@ -27,18 +27,14 @@
                     <li><a href="#">Computer Science</a></li>
                     <li><a href="#">Video Games</a></li>
                     <li><a href="#">Books</a></li>
-                    <li><a href="#">About</a></li>
+                    <li><a href="{% url 'about' %}">About</a></li>
                 </ul>
             </nav>
         </div>
 
         <div class="content container">
-            <div class="row">
-                <div class="col-md-8">
                 {% block content %}
                 {% endblock %}
-                </div>
-            </div>
         </div>
     </body>
 </html>

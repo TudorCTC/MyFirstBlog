@@ -5,7 +5,7 @@ from .models import Post, Comment
 from .forms import PostForm, CommentForm
 
 # Create your views here.
-
+    
 def post_list(request):
     
     posts = Post.objects.filter(publishedDate__lte = timezone.now()).order_by("publishedDate")
@@ -98,3 +98,7 @@ def comment_remove(request, pk):
     comment = get_object_or_404(Comment, pk = pk)
     comment.delete()
     return redirect('post_detail', pk = comment.post.pk)
+
+def about(request):
+
+    return render(request, 'blog/about.html', {})

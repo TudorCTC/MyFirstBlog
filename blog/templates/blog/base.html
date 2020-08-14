@@ -11,7 +11,7 @@
     <body>
         <div class = "pageHeader">
             {% if user.is_authenticated %}
-                <a href="{% url 'post_new' %}" class="top-menu"><span class="glyphicon glyphicon-plus"></span></a>
+                <a href="{% url 'new' %}" class="top-menu"><span class="glyphicon glyphicon-plus"></span></a>
                 <a href = "{% url 'post_draft_list' %}" class = "top-menu"><span class = "glyphicon glyphicon-edit"></span></a>
                 <p class="top-menu">Hello, {{ user.username }}! <small>(<a href="{% url 'logout' %}">Log out</a>)</small></p>
             {% else %}
@@ -23,10 +23,10 @@
         <div  class = "menu">
             <nav>
                 <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Computer Science</a></li>
-                    <li><a href="#">Video Games</a></li>
-                    <li><a href="#">Books</a></li>
+                    <li><a href="{% url 'home' %}">Home</a></li>
+                    <li><a href="{% url 'post_list' %}">Computer Science</a></li>
+                    <li><a href="{% url 'game_review_list' %}">Video Games</a></li>
+                    <li><a href="{% url 'book_review_list' %}">Books</a></li>
                     <li><a href="{% url 'about' %}">About</a></li>
                 </ul>
             </nav>

@@ -1,0 +1,13 @@
+{% extends 'blog/base.html' %}
+
+{% block content %}
+    {% for review in reviews %}
+        <div class = "post">
+            <div class = "date">
+                <p>published: {{ review.publishedDate }}</p>
+            </div>
+            <h2><a href="{% url 'game_review_detail' pk=review.pk %}">{{ review.title }}</a></h2>
+            <p>{{ review.intro|linebreaksbr }}</p>
+        </div>
+    {% endfor %}
+{% endblock %}

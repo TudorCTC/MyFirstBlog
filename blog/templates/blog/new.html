@@ -1,0 +1,9 @@
+{% extends 'blog/base.html' %}
+
+{% block content %}
+    <div class = "post-options" style = "text-align: center; padding: 20px;">
+        <p><a href="{% url 'new_game_review' %}">Game Review</a></p>
+        <p><a href="{% url 'new_book_review' %}">Book Review</a></p>
+        <p><a href="{% url 'post_new' %}">CS Post</a></p>
+    </div>
+{% endblock %}

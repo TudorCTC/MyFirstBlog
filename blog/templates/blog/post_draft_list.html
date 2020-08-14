@@ -10,4 +10,22 @@
             <p>{{ post.text|truncatechars:200 }}</p>
         </div>
     {% endfor %}
+    {% for review in gameReviews %}
+        <div class = "post">
+            <div class = "date">
+                <p>created: {{ review.createdDate }}</p>
+            </div>
+            <h2><a href = "{% url 'game_review_detail' pk=review.pk %}">{{ review.title }}</a></h1>
+            <p>{{ review.intro|truncatechars:200 }}</p>
+        </div>
+    {% endfor %}
+    {% for review in bookReviews %}
+        <div class = "post">
+            <div class = "date">
+                <p>created: {{ review.createdDate }}</p>
+            </div>
+            <h2><a href = "{% url 'book_review_detail' pk=review.pk %}">{{ review.title }}</a></h1>
+            <p>{{ review.intro|truncatechars:200 }}</p>
+        </div>
+    {% endfor %}
 {% endblock %}

@@ -126,7 +126,7 @@ h1, h2, h3, h4 {
     padding: 50px 100px 50px 100px;
 }
 
-.home h1, h2{
+.home-headings{
     font-family: "Roboto";
     font-weight: bold;
     text-align: center;

@@ -14,7 +14,19 @@
             <a class = "btn btn-default" href = "{% url 'game_review_edit' pk=review.pk %}"><span class = "glyphicon glyphicon-pencil"></span></a>
             <a class = "btn btn-default" href = "{% url 'game_review_remove' pk=review.pk %}"><span class = "glyphicon glyphicon-remove"></span></a>
         {% endif %}
-        <h2>{{ review.title }}</h2>
+        <br>
+        {% if review.coverArt %}
+            <img class = "game-image" src = "{{ review.coverArt.url }}" alt="No image">
+        {% endif %}
+        <h1>{{ review.title }}</h1>
         <p>{{ review.intro|linebreaksbr }}</p>
+        <h2>Graphics</h2>
+        <p>{{ review.graphics|linebreaksbr }}</p>
+        <h2>Story</h2>
+        <p>{{ review.story|linebreaksbr }}</p>
+        <h2>Gameplay</h2>
+        <p>{{ review.gameplay|linebreaksbr }}</p>
+        <h2>Conclusion</h2>
+        <p>{{ review.graphics|linebreaksbr }}</p>
     </div>
 {% endblock %}

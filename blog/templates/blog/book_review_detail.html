@@ -14,7 +14,15 @@
             <a class = "btn btn-default" href = "{% url 'book_review_edit' pk=review.pk %}"><span class = "glyphicon glyphicon-pencil"></span></a>
             <a class = "btn btn-default" href = "{% url 'book_review_remove' pk=review.pk %}"><span class = "glyphicon glyphicon-remove"></span></a>
         {% endif %}
-        <h2>{{ review.title }}</h2>
+        <h1>{{ review.title }}</h1>
         <p>{{ review.intro|linebreaksbr }}</p>
+        <h2>Plot</h2>
+        <p>{{ review.plot|linebreaksbr }}</p>
+        <h2>Characters</h2>
+        <p>{{ review.characters|linebreaksbr }}</p>
+        <h2>World Building</h2>
+        <p>{{ review.worldBuilding|linebreaksbr }}</p>
+        <h2>Conclusion</h2>
+        <p>{{ review.conclusion|linebreaksbr }}</p>
     </div>
 {% endblock %}

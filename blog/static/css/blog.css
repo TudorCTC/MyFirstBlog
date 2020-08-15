@@ -29,6 +29,7 @@
 
 nav {
     font-family: "Roboto";
+    font-size: medium;
     font-weight: 500;
     display: flex;
     justify-content: center;
@@ -81,6 +82,11 @@ nav a:hover::before {
 body {
     background-image: url("../greenWallpaper5.jpg");
     background-repeat: repeat-y;
+    font-family: "Roboto";
+    font-size: large;
+    text-align: justify;
+
+    line-height: 1.6;
 }
 
 .content {
@@ -110,7 +116,12 @@ h1, h2, h3, h4 {
 }
 
 .post {
-    margin-bottom: 70px;
+    padding: 25px 100px 50px 100px;
+}
+
+.post h1{
+    text-align: center;
+    margin: 25px 100px 25px 100px;
 }
 
 .post h2 a, .post h2 a:visited {
@@ -118,7 +129,7 @@ h1, h2, h3, h4 {
 }
 
 .comment {
-    margin: 20px 0px 20px 20px;
+    margin: 20px 100px 20px 100px;
 }
 
 /*Settings for the "Home" page.*/
@@ -127,13 +138,12 @@ h1, h2, h3, h4 {
 }
 
 .home-headings{
-    font-family: "Roboto";
+    font-family: "Righteous";
     font-weight: bold;
     text-align: center;
 }
 
 .home p{
-    text-indent: 50px;
     text-align: justify;
 
     line-height: 1.6;
@@ -151,13 +161,12 @@ h1, h2, h3, h4 {
 }
 
 .about h1{
-    font-family: "Roboto";
+    font-family: "Righteous";
     font-weight: bold;
     text-align: center;
 }
 
 .about p{
-    text-indent: 50px;
     text-align: justify;
 
     line-height: 1.6;
@@ -184,4 +193,11 @@ h1, h2, h3, h4 {
 
 .login td{
     padding: 5px;
+}
+
+/*Settings for the images shown in game reviews.*/
+.game-image {
+    margin-top: 20px;
+    max-width: 100%;
+    max-height: 100%;
 }

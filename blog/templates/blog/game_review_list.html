@@ -7,7 +7,8 @@
                 <p>published: {{ review.publishedDate }}</p>
             </div>
             <h2><a href="{% url 'game_review_detail' pk=review.pk %}">{{ review.title }}</a></h2>
-            <p>{{ review.intro|linebreaksbr }}</p>
+            <p>{{ review.intro|truncatewords:50|linebreaksbr }}</p>
+            <a href = "{% url 'game_review_detail' pk=review.pk %}">View more...</a>
         </div>
     {% endfor %}
 {% endblock %}

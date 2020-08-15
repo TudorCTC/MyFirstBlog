@@ -121,7 +121,7 @@ def comment_remove(request, pk):
 def new_game_review(request):
 
     if request.method == "POST":
-        form = GameReviewForm(request.POST)
+        form = GameReviewForm(request.POST, request.FILES)
         if form.is_valid():
             review = form.save(commit=False)
             review.author = request.user

@@ -2,29 +2,30 @@
 .pageHeader {
     background-color: #1de777;
     margin-top: 0;
-    padding: 1px 20px 1px 40px;
-    height: 9vh;
+    padding: 0.5vh 1vw 0.5vh 2vw;
+    min-height: 6vh;
 }
 
 /*Settings for the login menu.*/
 .top-menu, .top-menu:hover, .top-menu:visited {
     color: #ffffff;
     float: right;
-    font-size: 26pt;
+    font-size: 3vh;
     font-family: "Roboto";
-    margin-right: 20px;
+    margin-right: 1vw;
+    margin-top: 3vh;
 }
 
 .pageHeader h1, .pageHeader h1 a, .pageHeader h1 a:visited, .pageHeader h1 a:active {
     color: #ffffff;
-    font-size: 36pt;
+    font-size: 4vh;
     text-decoration: none;
 }
 
 /*Settings for the navigation bar.*/
 .menu {
     background-color: #26b370;
-    height: 5vh;
+    min-height: 4vh;
 }
 
 nav {
@@ -43,8 +44,8 @@ nav ul {
 
 nav li {
     display: inline-block;
-    margin-left: 70px;
-    padding-top: 25px;
+    margin-left: 2vw;
+    padding-top: 2vh;
 
     position: relative;
 }
@@ -63,7 +64,7 @@ nav a:hover {
 nav a::before {
     content: '';
     display: block;
-    height: 5px;
+    height: 0.5vh;
     width: 100%;
     background-color: #000000;
 
@@ -90,7 +91,7 @@ body {
 }
 
 .content {
-    min-height: 86vh;
+    min-height: 87vh;
     margin: 0 auto;
     background-color: #ffffff;
     position: relative;
@@ -116,12 +117,12 @@ h1, h2, h3, h4 {
 }
 
 .post {
-    padding: 25px 100px 50px 100px;
+    padding: 2% 10% 2% 10%;
 }
 
 .post h1{
     text-align: center;
-    margin: 25px 100px 25px 100px;
+    margin: 2% 10% 2% 10%;
 }
 
 .post h2 a, .post h2 a:visited {
@@ -129,12 +130,12 @@ h1, h2, h3, h4 {
 }
 
 .comment {
-    margin: 20px 100px 20px 100px;
+    margin: 2% 10% 2% 10%;
 }
 
 /*Settings for the "Home" page.*/
 .home {
-    padding: 50px 100px 50px 100px;
+    padding: 3% 10% 3% 10%;
 }
 
 .home-headings{
@@ -152,12 +153,12 @@ h1, h2, h3, h4 {
     font-weight: 400;
     font-size: large;
 
-    padding-top: 20px;
+    padding-top: 1%;
 }
 
 /*Settings for the "About" page.*/
 .about {
-    padding: 50px 100px 50px 100px;
+    padding: 3% 10% 3% 10%;
 }
 
 .about h1{
@@ -175,29 +176,30 @@ h1, h2, h3, h4 {
     font-weight: 400;
     font-size: large;
 
-    padding-top: 20px;
+    padding-top: 1%;
 }
 
 /*Settings for the login screen.*/
 .login {
     margin: 0 auto;
-    margin-top: 40px;
+    margin-top: 4%;
     text-align: center;
 }
 
 .login table {
     margin: 0 auto;
-    margin-top: 40px;
-    margin-bottom: 15px;
+    margin-top: 2%;
+    margin-bottom: 2%;
 }
 
 .login td{
-    padding: 5px;
+    padding: 2%;
 }
 
 /*Settings for the images shown in game reviews.*/
-.game-image {
-    margin-top: 20px;
+#game-image {
+    margin-top: 2%;
+    padding: 0% 0% 0% 0%;
     max-width: 100%;
     max-height: 100%;
 }

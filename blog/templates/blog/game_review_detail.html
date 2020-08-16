@@ -16,7 +16,7 @@
         {% endif %}
         <br>
         {% if review.coverArt %}
-            <img class = "game-image" src = "{{ review.coverArt.url }}" alt="No image">
+            <img id = "game-image" src = "{{ review.coverArt.url }}" alt="No image">
         {% endif %}
         <h1>{{ review.title }}</h1>
         <p>{{ review.intro|linebreaksbr }}</p>

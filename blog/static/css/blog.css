@@ -117,7 +117,7 @@ h1, h2, h3, h4 {
 }
 
 .post {
-    padding: 2% 10% 2% 10%;
+    padding: 3vh 5vw 3vh 5vw;
 }
 
 .post h1{
@@ -130,12 +130,12 @@ h1, h2, h3, h4 {
 }
 
 .comment {
-    margin: 2% 10% 2% 10%;
+    margin: 3vh 5vw 3vh 5vw;
 }
 
 /*Settings for the "Home" page.*/
 .home {
-    padding: 3% 10% 3% 10%;
+    padding: 3vh 5vw 3vh 5vw;
 }
 
 .home-headings{
@@ -153,12 +153,12 @@ h1, h2, h3, h4 {
     font-weight: 400;
     font-size: large;
 
-    padding-top: 1%;
+    padding-top: 1vh;
 }
 
 /*Settings for the "About" page.*/
 .about {
-    padding: 3% 10% 3% 10%;
+    padding: 3vh 5vw 3vh 5vw;
 }
 
 .about h1{
@@ -176,7 +176,7 @@ h1, h2, h3, h4 {
     font-weight: 400;
     font-size: large;
 
-    padding-top: 1%;
+    padding-top: 1vh;
 }
 
 /*Settings for the login screen.*/
